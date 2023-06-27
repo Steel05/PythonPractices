@@ -1,0 +1,32 @@
+Random Number Guesser - Create a program that allows the user to input a number than have the computer guess random numbers until it gets the number the user gave, have the
+			computer keep track of how many guesses it made and state number after it has guessed the number
+[CHALLENGE] - Add code onto this project that will create a random range for the computer to guess in, the range must be from 0 to no more than twice the target number
+[CHALLENGE] - Add code onto this project that will keep track of the highest and lowest number the computer guessed and print it at the end
+[CHALLENGE] - Add code onto this project that will prevent the computer from guessing the same number twice
+
+
+
+Higher or Lower - Create a program that will generate a random number then have the user attempt to guess the number, after every guess inform the user if the target number
+		  is higher or lower than their guess, upon guessing the number inform the user how many times they had to guess in order to get the number
+
+
+
+Number Wordle - Create a program that will generate a random 3 digit code then have the user try to guess the code, after each guess inform the if each digit of their guess
+		is in the correct spot, in the wrong spot, or not in the code at all
+[EVOLVE] - Wordle - Modify the code of this project to work with letters instead of numbers and have it function like the game Wordle
+
+
+
+Random Square - Create a program using SimpleGUI that will draw a square to the screen and will move to a random position when a button is pressed
+[CHALLENGE] - Add code onto this project that will change the size of the square randomly when the button is pressed
+[CHALLENGE] - Add code onto this project to also move the square to where the user clicks without changing its size
+
+
+
+Moving Square - Create a program using SimpleGUI that will allow the user to control a square on the screen by moving it when the user presses one of the arrow keys
+[CHALLENGE] - Add code onto this project that will continously move the square if the user holds down the arrow keys
+
+
+
+Robot - Create a program that will allow the user to input commands to move a robot on a coordinate plane in all four cardinal directions, the commands should follow this
+	format: [DIRECTION] [DISTANCE] Ex. Up 5, then have the program print the new position of the robot after every command
