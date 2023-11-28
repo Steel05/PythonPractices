@@ -26,11 +26,11 @@ def parseGuess():
     #Tell the function that when guess is referenced it is the one the user inputted
     global guess
     
-    #
-    #If global keyword is not used the function will assume it is a local variable and throw an error
-    #
+    ######################################################################################################
+    ## If global keyword is not used the function will assume it is a local variable and throw an error ##
+    ######################################################################################################
     
-    #Initialize a variable to a blank string, this variable will be added onto to form the final string returned by the function
+    #Initialize a variable to a blank string, this will be what the function returns
     infoString = ""
     
     #Will loop through the user's guess by accessing each character as though the string was an array
@@ -39,13 +39,14 @@ def parseGuess():
         if guess[guessIndex] == code[guessIndex]:
             infoString += "^"
         #If the number is in the right spot there is no need to check for misplacement
+
         else:
             #Initialize a variable to 0 to keep track of how many times a misplaced number is found
             #Will be used to determine misplaced vs a number not being in the code
             successfulChecks = 0
             
-            #Will loop through the code to be used to compare each character to the guess
-            #This while loop will only tell how many times each number in the guess is found in the code
+            #Will loop through the code to compare each character to the guess
+            #This for loop will only tell how many times each number in the guess is found in the code
             #It will not handle changing the infoString
             for codeIndex in range(0, 3):
                 #Check if a number is misplaced
