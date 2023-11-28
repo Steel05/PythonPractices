@@ -15,9 +15,6 @@ attempts = 0
 #Initialize a variable to false to that the while loop will run
 result = False
 
-#Function that will go through the user's guess and compare it against the code
-#Will return a string that will be outputted to the user to provide info on the placements of the numbers in their guess
-
 #Function that will handle the entire guessing process as well as the output of higher or lower
 #Will return a boolean that will be used to continue the while loop
 def Guess():
@@ -27,9 +24,9 @@ def Guess():
     #Tell the function that when attempts is referenced it is the one declared earlier in the program
     global attempts
     
-    #
-    #If global keyword is not used the function will assume it is a local variable and throw an error
-    #
+    ######################################################################################################
+    ## If global keyword is not used the function will assume it is a local variable and throw an error ##
+    ######################################################################################################
     
     #Set the guess to a null value
     guess = None
