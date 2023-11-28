@@ -2,8 +2,6 @@
 import random
 
 #Prompt the user for a number for the computer to guess and cast to an int
-#Alternatively could cast to string on every guess and leave targetNum as a string
-#However casting on every guess is less efficient
 targetNum = int(input("Please input a number"))
 
 #Generate a maximum value that the computer can guess
@@ -15,8 +13,7 @@ maxNum = random.randint(0, targetNum) + targetNum
 print(f"The computer will try to guess {targetNum} within the range of (0, {maxNum})\n\n")
 
 #Initialize a variable to serve as the holding place for each guess
-#Initialize it to targetNum - 1 to ensure that no matter what the while loop will run
-#Any mathematical augmentation to the targetNum will result in the same effect
+#Initialize it to targetNum - 1 to ensure that the while loop will run
 guess = targetNum - 1
 
 #Initialize a variable to keep track of how many guesses the computer has made

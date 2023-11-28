@@ -2,15 +2,13 @@
 import random
 
 #Prompt the user for a number for the computer to guess and cast to an int
-#Alternatively could cast to string on every guess and leave targetNum as a string
-#However casting on every guess is less efficient 
 targetNum = int(input("Please input a number"))
 
 #Let the user know what exactly the computer will be doing
 print(f"The computer will try to guess {targetNum} within the range of (0, 10000)\n\n")
 
 #Initialize a variable to serve as the holding place for each guess
-#Initialize it to targetNum - 1 to ensure that no matter what the while loop will run
+#Initialize it to targetNum - 1 to ensure that the while loop will run
 #Any mathematical augmentation to the targetNum will result in the same effect
 guess = targetNum - 1
 
