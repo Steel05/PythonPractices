@@ -21,7 +21,7 @@ squareVelocity = [0, 0]
 
 #Function used to determine which key the user pressed
 def DownInputHandler(key):
-    #Must use global to tell the code to use the position array created at the beginning of the program
+    #Must use global to tell the code to use the velocity array created at the beginning of the program
     #If global is not used the program will create a different array and perform operations on that array
     global squareVelocity
     
@@ -41,11 +41,11 @@ def DownInputHandler(key):
 
 #Function used to determine which key the user released
 def UpInputHandler(key):
-    #Must use global to tell the code to use the position array created at the beginning of the program
+    #Must use global to tell the code to use the velocity array created at the beginning of the program
     #If global is not used the program will create a different array and perform operations on that array
     global squareVelocity
     
-    #Check if the user is pressing one of the arrow keys and adjust the squares velocity accordingly
+    #Check if the user released one of the arrow keys and adjust the square's velocity accordingly
     #Up
     if key == 38:
         squareVelocity[1] -= squareMoveSpeed

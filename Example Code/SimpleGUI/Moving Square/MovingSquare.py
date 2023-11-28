@@ -21,7 +21,7 @@ def InputHandler(key):
     #If global is not used the program will create a different array and perform operations on that array
     global squarePosition
     
-    #Check if the user is pressing one of the arrow keys
+    #Check if the user pressed one of the arrow keys
     #Up
     if key == 38:
         #Use negative moveBy for y components because SimpleGUI has (0, 0) in the top left
